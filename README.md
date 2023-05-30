@@ -10,5 +10,5 @@ Comments are included in the main.py to describe the efforts to solve the task.
 ## Deployment Task
 
 Solution is pictured below. 
-![architecture](sph-challenge.drawio)
+![architecture](sph-challenge.drawio.png)
 

@@ -12,3 +12,12 @@ Comments are included in the main.py to describe the efforts to solve the task.
 Solution is pictured below. 
 ![architecture](sph-challenge.drawio.png)
 
+The Makefile describes the make commands to spin up the infrastructure to deploy the application. The terraform scripts have been designed to be able to deploy to different environments via loading different variable files.
+
+```sh
+make docker-build-push ECR_REGISTRY=ECR_REGISTRY ECR_REPOSITORY=ECR_REPOSITORY IMAGE_TAG=IMAGE_TAG
+make tf-init env=env
+make tf-plan env=env
+make tf-apply-plan env=env
+```
+

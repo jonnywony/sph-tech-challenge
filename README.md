@@ -21,3 +21,15 @@ make tf-plan env=env
 make tf-apply-plan env=env
 ```
 
+## Improvements that could be made
+
+### Programming Task
+
+- Hosting the storage of the past http status externally
+- Create prometheus metric over /metric endpoint for the http status, so that we can see a time series graph for http status on grafana/kibana
+- Threading/Forking(?) to increase the http endpoint speed
+
+### Deployment Task
+
+- Security group to increase security posture of ECS
+- ALB to load balance requests to application if we were to scale the application
